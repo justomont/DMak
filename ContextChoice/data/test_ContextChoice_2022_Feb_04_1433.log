@@ -1,0 +1,145 @@
+0.7516 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+7.8843 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([1, 1, 1]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fc1e8362048>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7fc1e8099198>, multiSample=False, name='window1', numSamples=2, pos=[360.0, 225.0], screen=0, size=array([2880, 1800]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+7.8844 	EXP 	window1: mouseVisible = True
+7.8845 	EXP 	window1: recordFrameIntervals = False
+8.0497 	EXP 	window1: recordFrameIntervals = True
+8.2334 	EXP 	window1: recordFrameIntervals = False
+12.0248 	EXP 	Created Disclaimer = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='Disclaimer', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+12.0256 	EXP 	Created ContextPresentation = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='ContextPresentation', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+12.0287 	EXP 	Created FixationCross = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-1.0, fillColor=array([-1, -1, -1]), fillColorSpace='rgb', fillRGB=array([-1, -1, -1]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1, -1, -1]), lineWidth=0.6, name='FixationCross', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+12.0334 	EXP 	Created stimA = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='stimA', opacity=1, ori=0.0, pos=array([-0.5,  0. ]), size=array([0.25, 0.25]), texRes=128.0, units='height', win=Window(...))
+12.0365 	EXP 	Created stimB = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='stimB', opacity=1, ori=0.0, pos=array([0.5, 0. ]), size=array([0.25, 0.25]), texRes=128.0, units='height', win=Window(...))
+12.0378 	EXP 	Created squareA = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-4.0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([-1.,  1., -1.]), lineColorSpace='rgb', lineRGB=array([-1,  1, -1]), lineWidth=5.0, name='squareA', opacity=0.5, ori=0.0, pos=array([-0.5,  0. ]), size=array([0.25, 0.25]), units='height', vertices=ndarray(...), win=Window(...))
+12.0389 	EXP 	Created squareB = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-5.0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([-1.,  1., -1.]), lineColorSpace='rgb', lineRGB=array([-1,  1, -1]), lineWidth=5.0, name='squareB', opacity=0.5, ori=0.0, pos=array([0.5, 0. ]), size=array([0.25, 0.25]), units='height', vertices=ndarray(...), win=Window(...))
+12.0431 	EXP 	Created question_confidence = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='question_confidence', opacity=1, ori=0.0, pos=array([0. , 0.1]), rgb=UNKNOWN, text='How confident are you with your choice?', units='height', win=Window(...), wrapWidth=1)
+12.0563 	EXP 	window1: mouseVisible = True
+12.0669 	EXP 	Created slider_confidence = Slider(__class__=<class 'psychopy.visual.slider.Slider'>, autoDraw=False, autoLog=True, borderColor=None, color=None, colorSpace='rgb', depth=-1, fillColor=None, flip=False, font='Open Sans', granularity=1.0, labelHeight=0.05, labelWrapWidth=None, labels=('Nothing', 'Absolutely'), name='slider_confidence', opacity=None, pos=(0, 0.0), readOnly=False, self=UNKNOWN, size=(1.1, 0.1), startValue=None, style=method-wrapper(...), styleTweaks=method-wrapper(...), ticks=ndarray(...), units='height', win=Window(...))
+12.0735 	EXP 	Created question_valueA = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='question_valueA', opacity=1, ori=0.0, pos=array([0. , 0.3]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+12.0779 	EXP 	window1: mouseVisible = True
+12.0868 	EXP 	Created slider_valueA = Slider(__class__=<class 'psychopy.visual.slider.Slider'>, autoDraw=False, autoLog=True, borderColor=None, color=None, colorSpace='rgb', depth=-1, fillColor=None, flip=False, font='Open Sans', granularity=1.0, labelHeight=0.05, labelWrapWidth=None, labels=('Hate it', 'Love it'), name='slider_valueA', opacity=None, pos=(0, -0.2), readOnly=False, self=UNKNOWN, size=(1, 0.05), startValue=None, style=method-wrapper(...), styleTweaks=method-wrapper(...), ticks=ndarray(...), units='height', win=Window(...))
+12.0932 	EXP 	Created stimA_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='stimA_2', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.25, 0.25]), texRes=128.0, units='height', win=Window(...))
+12.0961 	EXP 	Created question_valueB = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='question_valueB', opacity=1, ori=0.0, pos=array([0. , 0.3]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+12.1005 	EXP 	window1: mouseVisible = True
+12.1082 	EXP 	Created slider_valueB = Slider(__class__=<class 'psychopy.visual.slider.Slider'>, autoDraw=False, autoLog=True, borderColor=None, color=None, colorSpace='rgb', depth=-1, fillColor=None, flip=False, font='Open Sans', granularity=1.0, labelHeight=0.05, labelWrapWidth=None, labels=('Hate it', 'Love it'), name='slider_valueB', opacity=None, pos=(0, -0.2), readOnly=False, self=UNKNOWN, size=(1.0, 0.05), startValue=None, style=method-wrapper(...), styleTweaks=method-wrapper(...), ticks=ndarray(...), units='height', win=Window(...))
+12.1144 	EXP 	Created stimB_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='stimB_2', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.25, 0.25]), texRes=128.0, units='height', win=Window(...))
+12.1190 	EXP 	Created calibrationTarget = TargetStim(__class__=<class 'psychopy.visual.target.TargetStim'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0, fillColor=array([0, 0, 0]), fillColorSpace='rgb', fillRGB=array([0, 0, 0]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1, -1, -1]), lineWidth=2.0, name='calibrationTarget', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.02, 0.02]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+12.1229 	EXP 	Created calibrationTargetInner = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0, fillColor=array([-1.        ,  0.00392157, -1.        ]), fillColorSpace='rgb', fillRGB=array([-1.        ,  0.00392157, -1.        ]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1, -1, -1]), lineWidth=2.0, name='calibrationTargetInner', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.007, 0.007]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+21.2989 	DATA 	Keypress: space
+21.3050 	DATA 	Keypress: space
+21.3182 	EXP 	slider_confidence: autoLog = True
+21.3182 	EXP 	slider_confidence: markerPos = None
+21.3182 	EXP 	slider_confidence: rating = None
+21.3182 	EXP 	slider_confidence: markerPos = None
+21.3182 	EXP 	slider_confidence: contrast = 1.0
+21.3182 	EXP 	slider_confidence: autoLog = True
+21.3182 	EXP 	slider_confidence: styleTweaks = []
+21.3182 	EXP 	slider_confidence: style = 'radio'
+21.3182 	EXP 	slider_confidence: styleTweaks = []
+21.3182 	EXP 	slider_valueA: autoLog = True
+21.3182 	EXP 	slider_valueA: markerPos = None
+21.3182 	EXP 	slider_valueA: rating = None
+21.3182 	EXP 	slider_valueA: markerPos = None
+21.3182 	EXP 	slider_valueA: contrast = 1.0
+21.3182 	EXP 	slider_valueA: autoLog = True
+21.3182 	EXP 	slider_valueA: styleTweaks = []
+21.3182 	EXP 	slider_valueA: style = 'radio'
+21.3182 	EXP 	slider_valueA: styleTweaks = []
+21.3182 	EXP 	slider_valueB: autoLog = True
+21.3182 	EXP 	slider_valueB: markerPos = None
+21.3182 	EXP 	slider_valueB: rating = None
+21.3182 	EXP 	slider_valueB: markerPos = None
+21.3182 	EXP 	slider_valueB: contrast = 1.0
+21.3182 	EXP 	slider_valueB: autoLog = True
+21.3182 	EXP 	slider_valueB: styleTweaks = []
+21.3182 	EXP 	slider_valueB: style = 'radio'
+21.3182 	EXP 	slider_valueB: styleTweaks = []
+21.3182 	EXP 	calibrationTarget: vertices = 'circle'
+21.3182 	EXP 	calibrationTargetInner: vertices = 'circle'
+21.3348 	EXP 	Disclaimer: autoDraw = True
+23.3364 	EXP 	Imported DemoLoop.xlsx as conditions, 6 conditions, 3 params
+23.3370 	EXP 	Created sequence: random, trialTypes=6, nReps=1, seed=None
+23.3373 	EXP 	New trial (rep=0, index=0): {'written_context': '" You are going to spend two days without..."', 'imageA': 'images/1a.jpg', 'imageB': 'images/1b.jpg'}
+23.3788 	EXP 	Disclaimer: autoDraw = False
+23.3788 	EXP 	Disclaimer: autoDraw = False
+23.3788 	EXP 	ContextPresentation: text = '" You are going to spend two days without..."'
+23.3788 	EXP 	stimA: image = 'images/1a.jpg'
+23.3788 	EXP 	stimB: image = 'images/1b.jpg'
+23.3788 	EXP 	ContextPresentation: autoDraw = True
+27.3671 	EXP 	FixationCross: autoDraw = True
+27.3839 	EXP 	ContextPresentation: autoDraw = False
+28.3672 	EXP 	FixationCross: autoDraw = False
+28.3672 	EXP 	stimA: autoDraw = True
+28.3672 	EXP 	stimB: autoDraw = True
+28.3672 	EXP 	squareA: autoDraw = True
+28.3672 	EXP 	squareB: autoDraw = True
+31.3582 	DATA 	Keypress: left
+32.3668 	EXP 	stimA: autoDraw = False
+32.3668 	EXP 	stimB: autoDraw = False
+33.1758 	DATA 	Keypress: left
+33.1844 	EXP 	ContextPresentation: autoDraw = False
+33.1844 	EXP 	FixationCross: autoDraw = False
+33.1844 	EXP 	stimA: autoDraw = False
+33.1844 	EXP 	stimB: autoDraw = False
+33.1844 	EXP 	squareA: autoDraw = False
+33.1844 	EXP 	squareB: autoDraw = False
+33.1844 	EXP 	slider_confidence: markerPos = None
+33.1844 	EXP 	slider_confidence: markerPos = None
+33.1844 	EXP 	slider_confidence: rating = None
+33.1844 	EXP 	question_confidence: autoDraw = True
+33.1844 	EXP 	slider_confidence: autoDraw = True
+35.5687 	DATA 	Mouse: Left button down, pos=(819,455)
+35.5835 	EXP 	slider_confidence: markerPos = 6.0
+35.6001 	EXP 	slider_confidence: markerPos = 6.0
+35.6167 	EXP 	slider_confidence: markerPos = 6.0
+35.6334 	EXP 	slider_confidence: markerPos = 6.0
+35.6505 	EXP 	slider_confidence: markerPos = 6.0
+35.6521 	DATA 	Mouse:  Left button up, pos=(819,455)
+35.6668 	EXP 	slider_confidence: markerPos = 6.0
+35.6668 	EXP 	slider_confidence: rating = 6.0
+35.6888 	EXP 	question_confidence: autoDraw = False
+35.6888 	EXP 	slider_confidence: autoDraw = False
+35.6888 	EXP 	slider_valueA: markerPos = None
+35.6888 	EXP 	slider_valueA: markerPos = None
+35.6888 	EXP 	slider_valueA: rating = None
+35.6888 	EXP 	stimA_2: image = 'images/1a.jpg'
+35.6888 	EXP 	question_valueA: autoDraw = True
+35.6888 	EXP 	slider_valueA: autoDraw = True
+35.6888 	EXP 	stimA_2: autoDraw = True
+36.8016 	DATA 	Mouse: Left button down, pos=(907,274)
+36.8168 	EXP 	slider_valueA: markerPos = 4.155555555555557
+36.8336 	EXP 	slider_valueA: markerPos = 4.155555555555557
+36.8502 	EXP 	slider_valueA: markerPos = 4.155555555555557
+36.8666 	EXP 	slider_valueA: markerPos = 4.155555555555557
+36.8715 	DATA 	Mouse:  Left button up, pos=(907,274)
+36.8837 	EXP 	slider_valueA: markerPos = 4.155555555555557
+36.9003 	EXP 	slider_valueA: markerPos = 4.0
+36.9003 	EXP 	slider_valueA: rating = 4.0
+36.9220 	EXP 	question_valueA: autoDraw = False
+36.9220 	EXP 	slider_valueA: autoDraw = False
+36.9220 	EXP 	stimA_2: autoDraw = False
+36.9220 	EXP 	slider_valueB: markerPos = None
+36.9220 	EXP 	slider_valueB: markerPos = None
+36.9220 	EXP 	slider_valueB: rating = None
+36.9220 	EXP 	stimB_2: image = 'images/1b.jpg'
+36.9220 	EXP 	question_valueB: autoDraw = True
+36.9220 	EXP 	slider_valueB: autoDraw = True
+36.9220 	EXP 	stimB_2: autoDraw = True
+38.0685 	DATA 	Mouse: Left button down, pos=(531,277)
+38.0838 	EXP 	slider_valueB: markerPos = -4.199999999999999
+38.1002 	EXP 	slider_valueB: markerPos = -4.199999999999999
+38.1165 	EXP 	slider_valueB: markerPos = -4.199999999999999
+38.1334 	EXP 	slider_valueB: markerPos = -4.199999999999999
+38.1502 	EXP 	slider_valueB: markerPos = -4.199999999999999
+38.1515 	DATA 	Mouse:  Left button up, pos=(531,277)
+38.1667 	EXP 	slider_valueB: markerPos = -4.0
+38.1667 	EXP 	slider_valueB: rating = -4.0
+38.1691 	EXP 	New trial (rep=0, index=1): {'written_context': '" You are going to travel twenty minutes by... "', 'imageA': 'images/2a.jpg', 'imageB': 'images/2b.jpg'}
+38.2001 	EXP 	question_valueB: autoDraw = False
+38.2001 	EXP 	slider_valueB: autoDraw = False
+38.2001 	EXP 	stimB_2: autoDraw = False
+38.2001 	EXP 	ContextPresentation: text = '" You are going to travel twenty minutes by... "'
+38.2001 	EXP 	stimA: image = 'images/2a.jpg'
+38.2001 	EXP 	stimB: image = 'images/2b.jpg'
+38.2001 	EXP 	ContextPresentation: autoDraw = True
+39.9021 	DATA 	Keypress: escape
+40.0503 	EXP 	window1: mouseVisible = True
