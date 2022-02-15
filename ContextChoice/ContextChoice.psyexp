@@ -347,7 +347,7 @@
         <Param name="size" updates="constant" val="(1.1, 0.1)" valType="list"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="startVal" updates="None" val="0.1" valType="code"/>
         <Param name="stopType" updates="None" val="time (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="6" valType="code"/>
         <Param name="storeHistory" updates="constant" val="False" valType="bool"/>
@@ -1445,7 +1445,7 @@
         <Param name="size" updates="constant" val="(1.1, 0.1)" valType="list"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="startVal" updates="None" val="0.1" valType="code"/>
         <Param name="stopType" updates="None" val="time (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="6" valType="code"/>
         <Param name="storeHistory" updates="constant" val="False" valType="bool"/>

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2021.2.3),
-    on Tue Feb 15 10:57:36 2022
+    on Tue Feb 15 11:25:13 2022
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -1154,7 +1154,7 @@ while continueRoutine and routineTimer.getTime() > 0:
             question_confidence_2.setAutoDraw(False)
     
     # *slider_confidence_2* updates
-    if slider_confidence_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+    if slider_confidence_2.status == NOT_STARTED and tThisFlip >= 0.1-frameTolerance:
         # keep track of start time/frame for later
         slider_confidence_2.frameNStart = frameN  # exact frame index
         slider_confidence_2.tStart = t  # local t and not account for scr refresh
@@ -2025,7 +2025,7 @@ for thisTrial in trials:
                 question_confidence.setAutoDraw(False)
         
         # *slider_confidence* updates
-        if slider_confidence.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        if slider_confidence.status == NOT_STARTED and tThisFlip >= 0.1-frameTolerance:
             # keep track of start time/frame for later
             slider_confidence.frameNStart = frameN  # exact frame index
             slider_confidence.tStart = t  # local t and not account for scr refresh

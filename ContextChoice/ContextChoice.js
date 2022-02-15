@@ -1,4 +1,4 @@
-/********************** 
+﻿/********************** 
  * Contextchoice Test *
  **********************/
 
@@ -1603,7 +1603,7 @@ function assessment_exRoutineEachFrame() {
     }
     
     // *slider_confidence_2* updates
-    if (t >= 0.0 && slider_confidence_2.status === PsychoJS.Status.NOT_STARTED) {
+    if (t >= 0.1 && slider_confidence_2.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
       slider_confidence_2.tStart = t;  // (not accounting for frame time here)
       slider_confidence_2.frameNStart = frameN;  // exact frame index
@@ -2497,7 +2497,7 @@ function confidenceRoutineEachFrame() {
     }
     
     // *slider_confidence* updates
-    if (t >= 0.0 && slider_confidence.status === PsychoJS.Status.NOT_STARTED) {
+    if (t >= 0.1 && slider_confidence.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
       slider_confidence.tStart = t;  // (not accounting for frame time here)
       slider_confidence.frameNStart = frameN;  // exact frame index
