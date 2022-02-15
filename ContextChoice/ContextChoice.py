@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2021.2.3),
-    on Tue Feb 15 11:25:13 2022
+    on Tue Feb 15 14:23:15 2022
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -360,8 +360,8 @@ recEYE_S = hardware.eyetracker.EyetrackerControl(
     tracker=eyetracker
 )
 
-# Initialize components for Routine "LookAtS"
-LookAtSClock = core.Clock()
+# Initialize components for Routine "decision"
+decisionClock = core.Clock()
 stimA_3 = visual.ImageStim(
     win=win,
     name='stimA_3', 
@@ -390,13 +390,13 @@ squareB_3 = visual.Rect(
     ori=0.0, pos=(0.5, 0),
     lineWidth=5.0,     colorSpace='rgb',  lineColor='lime', fillColor=None,
     opacity=None, depth=-3.0, interpolate=True)
-resp_LaS = event.Mouse(win=win)
+resp_choice = event.Mouse(win=win)
 x, y = [None, None]
-resp_LaS.mouseClock = core.Clock()
+resp_choice.mouseClock = core.Clock()
 sound_1 = sound.Sound('A', secs=0.5, stereo=True, hamming=True,
     name='sound_1')
 sound_1.setVolume(1.0)
-recEYE_LaS = hardware.eyetracker.EyetrackerControl(
+recEYE = hardware.eyetracker.EyetrackerControl(
     server=ioServer,
     tracker=eyetracker
 )
@@ -1767,19 +1767,19 @@ for thisTrial in trials:
     if recEYE_S.status != FINISHED:
         recEYE_S.status = FINISHED
     
-    # ------Prepare to start Routine "LookAtS"-------
+    # ------Prepare to start Routine "decision"-------
     continueRoutine = True
     routineTimer.add(30.000000)
     # update component parameters for each repeat
     stimA_3.setImage(imageA)
     stimB_3.setImage(imageB)
-    # setup some python lists for storing info about the resp_LaS
+    # setup some python lists for storing info about the resp_choice
     gotValidClick = False  # until a click is received
     sound_1.setSound('A', secs=0.5, hamming=True)
     sound_1.setVolume(1.0, log=False)
     # keep track of which components have finished
-    LookAtSComponents = [stimA_3, stimB_3, squareA_5, squareB_3, resp_LaS, sound_1, recEYE_LaS]
-    for thisComponent in LookAtSComponents:
+    decisionComponents = [stimA_3, stimB_3, squareA_5, squareB_3, resp_choice, sound_1, recEYE]
+    for thisComponent in decisionComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
         thisComponent.tStartRefresh = None
@@ -1789,14 +1789,14 @@ for thisTrial in trials:
     # reset timers
     t = 0
     _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-    LookAtSClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+    decisionClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
     frameN = -1
     
-    # -------Run Routine "LookAtS"-------
+    # -------Run Routine "decision"-------
     while continueRoutine and routineTimer.getTime() > 0:
         # get current time
-        t = LookAtSClock.getTime()
-        tThisFlip = win.getFutureFlipTime(clock=LookAtSClock)
+        t = decisionClock.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=decisionClock)
         tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
@@ -1872,26 +1872,26 @@ for thisTrial in trials:
                 squareB_3.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(squareB_3, 'tStopRefresh')  # time at next scr refresh
                 squareB_3.setAutoDraw(False)
-        # *resp_LaS* updates
-        if resp_LaS.status == NOT_STARTED and t >= 5-frameTolerance:
+        # *resp_choice* updates
+        if resp_choice.status == NOT_STARTED and t >= 5-frameTolerance:
             # keep track of start time/frame for later
-            resp_LaS.frameNStart = frameN  # exact frame index
-            resp_LaS.tStart = t  # local t and not account for scr refresh
-            resp_LaS.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(resp_LaS, 'tStartRefresh')  # time at next scr refresh
-            resp_LaS.status = STARTED
-            resp_LaS.mouseClock.reset()
-            prevButtonState = resp_LaS.getPressed()  # if button is down already this ISN'T a new click
-        if resp_LaS.status == STARTED:
+            resp_choice.frameNStart = frameN  # exact frame index
+            resp_choice.tStart = t  # local t and not account for scr refresh
+            resp_choice.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(resp_choice, 'tStartRefresh')  # time at next scr refresh
+            resp_choice.status = STARTED
+            resp_choice.mouseClock.reset()
+            prevButtonState = resp_choice.getPressed()  # if button is down already this ISN'T a new click
+        if resp_choice.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > resp_LaS.tStartRefresh + 25-frameTolerance:
+            if tThisFlipGlobal > resp_choice.tStartRefresh + 25-frameTolerance:
                 # keep track of stop time/frame for later
-                resp_LaS.tStop = t  # not accounting for scr refresh
-                resp_LaS.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(resp_LaS, 'tStopRefresh')  # time at next scr refresh
-                resp_LaS.status = FINISHED
-        if resp_LaS.status == STARTED:  # only update if started and not finished!
-            buttons = resp_LaS.getPressed()
+                resp_choice.tStop = t  # not accounting for scr refresh
+                resp_choice.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(resp_choice, 'tStopRefresh')  # time at next scr refresh
+                resp_choice.status = FINISHED
+        if resp_choice.status == STARTED:  # only update if started and not finished!
+            buttons = resp_choice.getPressed()
             if buttons != prevButtonState:  # button state changed?
                 prevButtonState = buttons
                 if sum(buttons) > 0:  # state changed to a new click
@@ -1912,22 +1912,22 @@ for thisTrial in trials:
                 sound_1.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(sound_1, 'tStopRefresh')  # time at next scr refresh
                 sound_1.stop()
-        # *recEYE_LaS* updates
-        if recEYE_LaS.status == NOT_STARTED and t >= 0.0-frameTolerance:
+        # *recEYE* updates
+        if recEYE.status == NOT_STARTED and t >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            recEYE_LaS.frameNStart = frameN  # exact frame index
-            recEYE_LaS.tStart = t  # local t and not account for scr refresh
-            recEYE_LaS.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(recEYE_LaS, 'tStartRefresh')  # time at next scr refresh
-            recEYE_LaS.status = STARTED
-        if recEYE_LaS.status == STARTED:
+            recEYE.frameNStart = frameN  # exact frame index
+            recEYE.tStart = t  # local t and not account for scr refresh
+            recEYE.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(recEYE, 'tStartRefresh')  # time at next scr refresh
+            recEYE.status = STARTED
+        if recEYE.status == STARTED:
             # is it time to stop? (based on local clock)
             if tThisFlip > 30-frameTolerance:
                 # keep track of stop time/frame for later
-                recEYE_LaS.tStop = t  # not accounting for scr refresh
-                recEYE_LaS.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(recEYE_LaS, 'tStopRefresh')  # time at next scr refresh
-                recEYE_LaS.status = FINISHED
+                recEYE.tStop = t  # not accounting for scr refresh
+                recEYE.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(recEYE, 'tStopRefresh')  # time at next scr refresh
+                recEYE.status = FINISHED
         
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -1937,7 +1937,7 @@ for thisTrial in trials:
         if not continueRoutine:  # a component has requested a forced-end of Routine
             break
         continueRoutine = False  # will revert to True if at least one component still running
-        for thisComponent in LookAtSComponents:
+        for thisComponent in decisionComponents:
             if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                 continueRoutine = True
                 break  # at least one component has not yet finished
@@ -1946,8 +1946,8 @@ for thisTrial in trials:
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
             win.flip()
     
-    # -------Ending Routine "LookAtS"-------
-    for thisComponent in LookAtSComponents:
+    # -------Ending Routine "decision"-------
+    for thisComponent in decisionComponents:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
     trials.addData('stimA_3.started', stimA_3.tStartRefresh)
@@ -1959,21 +1959,21 @@ for thisTrial in trials:
     trials.addData('squareB_3.started', squareB_3.tStartRefresh)
     trials.addData('squareB_3.stopped', squareB_3.tStopRefresh)
     # store data for trials (TrialHandler)
-    x, y = resp_LaS.getPos()
-    buttons = resp_LaS.getPressed()
-    trials.addData('resp_LaS.x', x)
-    trials.addData('resp_LaS.y', y)
-    trials.addData('resp_LaS.leftButton', buttons[0])
-    trials.addData('resp_LaS.midButton', buttons[1])
-    trials.addData('resp_LaS.rightButton', buttons[2])
-    trials.addData('resp_LaS.started', resp_LaS.tStart)
-    trials.addData('resp_LaS.stopped', resp_LaS.tStop)
+    x, y = resp_choice.getPos()
+    buttons = resp_choice.getPressed()
+    trials.addData('resp_choice.x', x)
+    trials.addData('resp_choice.y', y)
+    trials.addData('resp_choice.leftButton', buttons[0])
+    trials.addData('resp_choice.midButton', buttons[1])
+    trials.addData('resp_choice.rightButton', buttons[2])
+    trials.addData('resp_choice.started', resp_choice.tStart)
+    trials.addData('resp_choice.stopped', resp_choice.tStop)
     sound_1.stop()  # ensure sound has stopped at end of routine
     trials.addData('sound_1.started', sound_1.tStartRefresh)
     trials.addData('sound_1.stopped', sound_1.tStopRefresh)
     # make sure the eyetracker recording stops
-    if recEYE_LaS.status != FINISHED:
-        recEYE_LaS.status = FINISHED
+    if recEYE.status != FINISHED:
+        recEYE.status = FINISHED
     
     # ------Prepare to start Routine "confidence"-------
     continueRoutine = True

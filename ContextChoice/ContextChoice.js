@@ -322,12 +322,12 @@ var stimA;
 var stimB;
 var squareA;
 var squareB;
-var LookAtSClock;
+var decisionClock;
 var stimA_3;
 var stimB_3;
 var squareA_5;
 var squareB_3;
-var resp_LaS;
+var resp_choice;
 var sound_1;
 var confidenceClock;
 var question_confidence;
@@ -687,8 +687,8 @@ async function experimentInit() {
     opacity: undefined, depth: -5, interpolate: true,
   });
   
-  // Initialize components for Routine "LookAtS"
-  LookAtSClock = new util.Clock();
+  // Initialize components for Routine "decision"
+  decisionClock = new util.Clock();
   stimA_3 = new visual.ImageStim({
     win : psychoJS.window,
     name : 'stimA_3', units : undefined, 
@@ -725,10 +725,10 @@ async function experimentInit() {
     opacity: undefined, depth: -3, interpolate: true,
   });
   
-  resp_LaS = new core.Mouse({
+  resp_choice = new core.Mouse({
     win: psychoJS.window,
   });
-  resp_LaS.mouseClock = new util.Clock();
+  resp_choice.mouseClock = new util.Clock();
   sound_1 = new sound.Sound({
     win: psychoJS.window,
     value: 'A',
@@ -2057,9 +2057,9 @@ function trialsLoopBegin(trialsLoopScheduler, snapshot) {
       trialsLoopScheduler.add(trialRoutineBegin(snapshot));
       trialsLoopScheduler.add(trialRoutineEachFrame());
       trialsLoopScheduler.add(trialRoutineEnd());
-      trialsLoopScheduler.add(LookAtSRoutineBegin(snapshot));
-      trialsLoopScheduler.add(LookAtSRoutineEachFrame());
-      trialsLoopScheduler.add(LookAtSRoutineEnd());
+      trialsLoopScheduler.add(decisionRoutineBegin(snapshot));
+      trialsLoopScheduler.add(decisionRoutineEachFrame());
+      trialsLoopScheduler.add(decisionRoutineEnd());
       trialsLoopScheduler.add(confidenceRoutineBegin(snapshot));
       trialsLoopScheduler.add(confidenceRoutineEachFrame());
       trialsLoopScheduler.add(confidenceRoutineEnd());
@@ -2251,34 +2251,34 @@ function trialRoutineEnd() {
 }
 
 
-var LookAtSComponents;
-function LookAtSRoutineBegin(snapshot) {
+var decisionComponents;
+function decisionRoutineBegin(snapshot) {
   return async function () {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
     
-    //------Prepare to start Routine 'LookAtS'-------
+    //------Prepare to start Routine 'decision'-------
     t = 0;
-    LookAtSClock.reset(); // clock
+    decisionClock.reset(); // clock
     frameN = -1;
     continueRoutine = true; // until we're told otherwise
     routineTimer.add(30.000000);
     // update component parameters for each repeat
     stimA_3.setImage(imageA);
     stimB_3.setImage(imageB);
-    // setup some python lists for storing info about the resp_LaS
+    // setup some python lists for storing info about the resp_choice
     gotValidClick = false; // until a click is received
     sound_1.secs=0.5;
     sound_1.setVolume(1.0);
     // keep track of which components have finished
-    LookAtSComponents = [];
-    LookAtSComponents.push(stimA_3);
-    LookAtSComponents.push(stimB_3);
-    LookAtSComponents.push(squareA_5);
-    LookAtSComponents.push(squareB_3);
-    LookAtSComponents.push(resp_LaS);
-    LookAtSComponents.push(sound_1);
+    decisionComponents = [];
+    decisionComponents.push(stimA_3);
+    decisionComponents.push(stimB_3);
+    decisionComponents.push(squareA_5);
+    decisionComponents.push(squareB_3);
+    decisionComponents.push(resp_choice);
+    decisionComponents.push(sound_1);
     
-    for (const thisComponent of LookAtSComponents)
+    for (const thisComponent of decisionComponents)
       if ('status' in thisComponent)
         thisComponent.status = PsychoJS.Status.NOT_STARTED;
     return Scheduler.Event.NEXT;
@@ -2286,11 +2286,11 @@ function LookAtSRoutineBegin(snapshot) {
 }
 
 
-function LookAtSRoutineEachFrame() {
+function decisionRoutineEachFrame() {
   return async function () {
-    //------Loop for each frame of Routine 'LookAtS'-------
+    //------Loop for each frame of Routine 'decision'-------
     // get current time
-    t = LookAtSClock.getTime();
+    t = decisionClock.getTime();
     frameN = frameN + 1;// number of completed frames (so 0 is the first frame)
     // update/draw components on each frame
     
@@ -2357,22 +2357,22 @@ function LookAtSRoutineEachFrame() {
     if (squareB_3.status === PsychoJS.Status.STARTED && t >= frameRemains) {
       squareB_3.setAutoDraw(false);
     }
-    // *resp_LaS* updates
-    if (t >= 5 && resp_LaS.status === PsychoJS.Status.NOT_STARTED) {
+    // *resp_choice* updates
+    if (t >= 5 && resp_choice.status === PsychoJS.Status.NOT_STARTED) {
       // keep track of start time/frame for later
-      resp_LaS.tStart = t;  // (not accounting for frame time here)
-      resp_LaS.frameNStart = frameN;  // exact frame index
+      resp_choice.tStart = t;  // (not accounting for frame time here)
+      resp_choice.frameNStart = frameN;  // exact frame index
       
-      resp_LaS.status = PsychoJS.Status.STARTED;
-      resp_LaS.mouseClock.reset();
-      prevButtonState = resp_LaS.getPressed();  // if button is down already this ISN'T a new click
+      resp_choice.status = PsychoJS.Status.STARTED;
+      resp_choice.mouseClock.reset();
+      prevButtonState = resp_choice.getPressed();  // if button is down already this ISN'T a new click
       }
     frameRemains = 5 + 25 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
-    if (resp_LaS.status === PsychoJS.Status.STARTED && t >= frameRemains) {
-      resp_LaS.status = PsychoJS.Status.FINISHED;
+    if (resp_choice.status === PsychoJS.Status.STARTED && t >= frameRemains) {
+      resp_choice.status = PsychoJS.Status.FINISHED;
   }
-    if (resp_LaS.status === PsychoJS.Status.STARTED) {  // only update if started and not finished!
-      _mouseButtons = resp_LaS.getPressed();
+    if (resp_choice.status === PsychoJS.Status.STARTED) {  // only update if started and not finished!
+      _mouseButtons = resp_choice.getPressed();
       if (!_mouseButtons.every( (e,i,) => (e == prevButtonState[i]) )) { // button state changed?
         prevButtonState = _mouseButtons;
         if (_mouseButtons.reduce( (e, acc) => (e+acc) ) > 0) { // state changed to a new click
@@ -2408,7 +2408,7 @@ function LookAtSRoutineEachFrame() {
     }
     
     continueRoutine = false;  // reverts to True if at least one component still running
-    for (const thisComponent of LookAtSComponents)
+    for (const thisComponent of decisionComponents)
       if ('status' in thisComponent && thisComponent.status !== PsychoJS.Status.FINISHED) {
         continueRoutine = true;
         break;
@@ -2424,22 +2424,22 @@ function LookAtSRoutineEachFrame() {
 }
 
 
-function LookAtSRoutineEnd() {
+function decisionRoutineEnd() {
   return async function () {
-    //------Ending Routine 'LookAtS'-------
-    for (const thisComponent of LookAtSComponents) {
+    //------Ending Routine 'decision'-------
+    for (const thisComponent of decisionComponents) {
       if (typeof thisComponent.setAutoDraw === 'function') {
         thisComponent.setAutoDraw(false);
       }
     }
     // store data for psychoJS.experiment (ExperimentHandler)
-    _mouseXYs = resp_LaS.getPos();
-    _mouseButtons = resp_LaS.getPressed();
-    psychoJS.experiment.addData('resp_LaS.x', _mouseXYs[0]);
-    psychoJS.experiment.addData('resp_LaS.y', _mouseXYs[1]);
-    psychoJS.experiment.addData('resp_LaS.leftButton', _mouseButtons[0]);
-    psychoJS.experiment.addData('resp_LaS.midButton', _mouseButtons[1]);
-    psychoJS.experiment.addData('resp_LaS.rightButton', _mouseButtons[2]);
+    _mouseXYs = resp_choice.getPos();
+    _mouseButtons = resp_choice.getPressed();
+    psychoJS.experiment.addData('resp_choice.x', _mouseXYs[0]);
+    psychoJS.experiment.addData('resp_choice.y', _mouseXYs[1]);
+    psychoJS.experiment.addData('resp_choice.leftButton', _mouseButtons[0]);
+    psychoJS.experiment.addData('resp_choice.midButton', _mouseButtons[1]);
+    psychoJS.experiment.addData('resp_choice.rightButton', _mouseButtons[2]);
     sound_1.stop();  // ensure sound has stopped at end of routine
     return Scheduler.Event.NEXT;
   };
