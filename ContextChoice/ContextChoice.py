@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2021.2.3),
-    on Tue Feb 15 10:45:34 2022
+    on Tue Feb 15 10:57:36 2022
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -219,7 +219,7 @@ resp_Ex.mouseClock = core.Clock()
 tip_ex = visual.TextStim(win=win, name='tip_ex',
     text='Now you can report the selected option by clicking the left button in the mouse if the chosen option is the left, or the right button in the mouse if the chosen option is the right!',
     font='Open Sans',
-    pos=(0, 0.5), height=0.035, wrapWidth=None, ori=0.0, 
+    pos=(0, 0.25), height=0.035, wrapWidth=None, ori=0.0, 
     color='black', colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=-9.0);
@@ -244,7 +244,7 @@ win.mouseVisible = False
 tip_ex_2 = visual.TextStim(win=win, name='tip_ex_2',
     text='Now click on the ammount of confidence you feel after making the decision',
     font='Open Sans',
-    pos=(0, -0.5), height=0.035, wrapWidth=None, ori=0.0, 
+    pos=(0, -0.25), height=0.035, wrapWidth=None, ori=0.0, 
     color='black', colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=-3.0);
@@ -1055,7 +1055,7 @@ while continueRoutine and routineTimer.getTime() > 0:
         tip_ex.setAutoDraw(True)
     if tip_ex.status == STARTED:
         # is it time to stop? (based on global clock, using actual start)
-        if tThisFlipGlobal > tip_ex.tStartRefresh + 3-frameTolerance:
+        if tThisFlipGlobal > tip_ex.tStartRefresh + 10-frameTolerance:
             # keep track of stop time/frame for later
             tip_ex.tStop = t  # not accounting for scr refresh
             tip_ex.frameNStop = frameN  # exact frame index

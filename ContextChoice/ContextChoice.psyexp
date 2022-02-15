@@ -1382,13 +1382,13 @@
         <Param name="name" updates="None" val="tip_ex" valType="code"/>
         <Param name="opacity" updates="constant" val="" valType="num"/>
         <Param name="ori" updates="constant" val="0" valType="num"/>
-        <Param name="pos" updates="constant" val="(0, 0.5)" valType="list"/>
+        <Param name="pos" updates="constant" val="(0, 0.25)" valType="list"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="13" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="3" valType="code"/>
+        <Param name="stopVal" updates="constant" val="10" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
         <Param name="text" updates="constant" val="Now you can report the selected option by clicking the left button in the mouse if the chosen option is the left, or the right button in the mouse if the chosen option is the right!" valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
@@ -1487,7 +1487,7 @@
         <Param name="name" updates="None" val="tip_ex_2" valType="code"/>
         <Param name="opacity" updates="constant" val="" valType="num"/>
         <Param name="ori" updates="constant" val="0" valType="num"/>
-        <Param name="pos" updates="constant" val="(0, -0.5)" valType="list"/>
+        <Param name="pos" updates="constant" val="(0, -0.25)" valType="list"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>

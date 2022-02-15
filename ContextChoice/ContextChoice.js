@@ -1,4 +1,4 @@
-﻿/********************** 
+/********************** 
  * Contextchoice Test *
  **********************/
 
@@ -507,7 +507,7 @@ async function experimentInit() {
     text: 'Now you can report the selected option by clicking the left button in the mouse if the chosen option is the left, or the right button in the mouse if the chosen option is the right!',
     font: 'Open Sans',
     units: undefined, 
-    pos: [0, 0.5], height: 0.035,  wrapWidth: undefined, ori: 0.0,
+    pos: [0, 0.25], height: 0.035,  wrapWidth: undefined, ori: 0.0,
     color: new util.Color('black'),  opacity: undefined,
     depth: -9.0 
   });
@@ -543,7 +543,7 @@ async function experimentInit() {
     text: 'Now click on the ammount of confidence you feel after making the decision',
     font: 'Open Sans',
     units: undefined, 
-    pos: [0, (- 0.5)], height: 0.035,  wrapWidth: undefined, ori: 0.0,
+    pos: [0, (- 0.25)], height: 0.035,  wrapWidth: undefined, ori: 0.0,
     color: new util.Color('black'),  opacity: undefined,
     depth: -3.0 
   });
@@ -1505,7 +1505,7 @@ function trial_exampleRoutineEachFrame() {
       tip_ex.setAutoDraw(true);
     }
 
-    frameRemains = 13 + 3 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
+    frameRemains = 13 + 10 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
     if (tip_ex.status === PsychoJS.Status.STARTED && t >= frameRemains) {
       tip_ex.setAutoDraw(false);
     }
